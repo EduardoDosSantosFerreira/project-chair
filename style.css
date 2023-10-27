@@ -1,0 +1,355 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --text-color: #000000;
+  --main-color: #83b735;
+}
+section {
+  padding: 50px 10%;
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 100px;
+  background: #edecea;
+}
+.logo {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+.logo span {
+  color: var(--main-color);
+}
+.navbar {
+  position: relative;
+  display: flex;
+}
+.navbar a {
+  font-size: 1rem;
+  padding: 10px 20px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+.navbar a:hover {
+  color: var(--main-color);
+}
+#menu-icon {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: covere;
+  background-position: right;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+}
+.home-text h1 {
+  font-size: 2.7rem;
+}
+.home-text p {
+  font-size: 0.938rem;
+  margin: 0.4rem 0 1.8rem;
+}
+.home-text span {
+  color: var(--main-color);
+}
+.btn {
+  padding: 10px 14px;
+  background: var(--main-color);
+  color: #fff;
+  border-radius: 0.3rem;
+  font-size: 14px;
+}
+.btn:hover {
+  background: #8fc53d;
+}
+.heading {
+  text-align: center;
+}
+.heading span {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+.shop-container,
+.new-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.box {
+  position: relative;
+  box-shadow: 1px 4px 4px rgb(0, 0, 0, 0.1);
+  border-radius: 44px 4px 4px 4px;
+}
+.box .box-img {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 44px 4px 0 0;
+}
+.box .box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.box .box-img img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.title-price {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+.title-price h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.box span {
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding-left: 12px;
+  color: var(--main-color);
+}
+.stars .bx {
+  color: var(--main-color);
+}
+.box .bx-cart {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 7px;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 4px 0 4px 0;
+  background: var(--main-color);
+}
+.box .bx-cart:hover {
+  background: #8fc53d;
+}
+.new-container .box {
+  border-radius: 4px;
+}
+.new-container .box .box-img {
+  border-radius: 4px;
+}
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.about-img img {
+  width: 80%;
+  border-radius: 10px;
+  object-fit: contain;
+}
+.about-text span {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+.about-text p {
+  font-size: 0.938rem;
+  margin: 0.5rem 0 1.4rem;
+}
+.brands-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.brands-container img {
+  width: 100px;
+  filter: grayscale(1);
+}
+.brands-container img:hover {
+  width: 100px;
+  filter: grayscale(0);
+}
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.newsletter h2 {
+  color: #fff;
+}
+.news-box {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+.news-box input {
+  width: 260px;
+  height: 44px;
+  border: none;
+  outline: none;
+  background: #fff;
+  padding: 10px;
+}
+.news-box .btn {
+  height: 44px;
+  padding: 11px;
+  border-radius: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+  gap: 1rem;
+}
+.footer-box h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.footer-box span {
+  color: var(--main-color);
+}
+.footer-box p {
+  font-size: 00.938rem;
+  margin-bottom: 10px;
+}
+.social {
+  display: flex;
+  align-items: center;
+}
+.social a {
+  font-size: 24px;
+  margin-right: 10px;
+  color: var(--text-color);
+}
+.social a:hover {
+  color: var(--main-color);
+}
+.footer-box h3 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.footer-box li a {
+  color: var(--text-color);
+}
+.footer-box li a:hover {
+  color: var(--main-color);
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+.contact-info span {
+  color: var(--text-color);
+}
+.copyright {
+  padding: 20px;
+  text-align: center;
+}
+/* Making Responsive */
+@media (max-width: 991px) {
+  header {
+    padding: 18px 4%;
+  }
+  section {
+    padding: 50px 4%;
+  }
+}
+@media (max-width: 881px) {
+  .home-text h1 {
+    font-size: 2rem;
+  }
+  .shop-container,
+  .new-container {
+    grid-template-columns: repeat(auto-fit, minmax(218px, auto));
+  }
+}
+@media (max-width: 768px) {
+  header {
+    padding: 11px 4%;
+  }
+  #menu-icon {
+    display: initial;
+  }
+  header .navbar {
+    position: absolute;
+    top: -500px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 4px 4px rgb(0 0 0 /10%);
+    transition: 0.2s ease;
+    text-align: center;
+  }
+  .navbar a {
+    padding: 1.5rem;
+    display: block;
+  }
+  .navbar.active {
+    top: 100%;
+  }
+  .navbar a:hover {
+    color: #fff;
+    background: var(--main-color);
+  }
+  .about {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .about-img {
+    padding-top: 1rem;
+    order: 2;
+  }
+}
+@media (max-width: 491px) {
+  .home-text h1 {
+    font-size: 1.7rem;
+  }
+  .shop-container,
+  .new-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  }
+  .box .box-img {
+    height: 300px;
+  }
+  .news-box input {
+    width: 180px;
+  }
+  .about-text h2 {
+    font-size: 1.2rem;
+  }
+}
