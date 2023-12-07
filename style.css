@@ -1,5 +1,7 @@
 /* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+/* Global Reset and Styling */
 * {
   margin: 0;
   padding: 0;
@@ -10,13 +12,19 @@
   text-decoration: none;
   font-family: "Poppins", sans-serif;
 }
+
+/* Root Variables */
 :root {
   --text-color: #000000;
   --main-color: #83b735;
 }
+
+/* Section Styles */
 section {
   padding: 50px 10%;
 }
+
+/* Header Styles */
 header {
   position: fixed;
   width: 100%;
@@ -29,53 +37,69 @@ header {
   padding: 18px 100px;
   background: #edecea;
 }
+
+/* Logo Styles */
 .logo {
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--text-color);
 }
+
 .logo span {
   color: var(--main-color);
 }
+
+/* Navbar Styles */
 .navbar {
   position: relative;
   display: flex;
 }
+
 .navbar a {
   font-size: 1rem;
   padding: 10px 20px;
   font-weight: 500;
   color: var(--text-color);
 }
+
 .navbar a:hover {
   color: var(--main-color);
 }
+
+/* Menu Icon Styles */
 #menu-icon {
   font-size: 2rem;
   cursor: pointer;
   display: none;
 }
+
+/* Home Styles */
 .home {
   width: 100%;
   min-height: 100vh;
   background-image: url(img/background.jpg);
   background-repeat: no-repeat;
-  background-size: covere;
+  background-size: cover;
   background-position: right;
   background-attachment: fixed;
   display: flex;
   align-items: center;
 }
+
 .home-text h1 {
   font-size: 2.7rem;
 }
+
 .home-text p {
   font-size: 0.938rem;
   margin: 0.4rem 0 1.8rem;
 }
+
 .home-text span {
   color: var(--main-color);
 }
+
+/* Button Styles */
 .btn {
   padding: 10px 14px;
   background: var(--main-color);
@@ -83,18 +107,24 @@ header {
   border-radius: 0.3rem;
   font-size: 14px;
 }
+
 .btn:hover {
   background: #8fc53d;
 }
+
+/* Heading Styles */
 .heading {
   text-align: center;
 }
+
 .heading span {
   font-size: 14px;
   font-weight: 500;
   color: var(--main-color);
   text-transform: uppercase;
 }
+
+/* Shop and New Container Styles */
 .shop-container,
 .new-container {
   display: grid;
@@ -102,45 +132,59 @@ header {
   gap: 1rem;
   margin-top: 2rem;
 }
+
+/* Box Styles */
 .box {
   position: relative;
   box-shadow: 1px 4px 4px rgb(0, 0, 0, 0.1);
   border-radius: 44px 4px 4px 4px;
 }
+
 .box .box-img {
   width: 100%;
   height: 400px;
   overflow: hidden;
   border-radius: 44px 4px 0 0;
 }
+
 .box .box-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
+
 .box .box-img img:hover {
   transform: scale(1.1);
   transition: 0.5s;
 }
+
+/* Title and Price Styles */
 .title-price {
   display: flex;
   justify-content: space-between;
   padding: 12px;
 }
+
 .title-price h3 {
   font-size: 1rem;
   font-weight: 600;
 }
+
+/* Box Span Styles */
 .box span {
   font-size: 1.1rem;
   font-weight: 500;
   padding-left: 12px;
   color: var(--main-color);
 }
+
+/* Stars Styles */
 .stars .bx {
   color: var(--main-color);
 }
+
+/* Box Cart Styles */
 .box .bx-cart {
   position: absolute;
   bottom: 0;
@@ -151,35 +195,46 @@ header {
   border-radius: 4px 0 4px 0;
   background: var(--main-color);
 }
+
 .box .bx-cart:hover {
   background: #8fc53d;
 }
+
+/* New Container Box Styles */
 .new-container .box {
   border-radius: 4px;
 }
+
 .new-container .box .box-img {
   border-radius: 4px;
 }
+
+/* About Container Styles */
 .about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
+
 .about-img img {
   width: 80%;
   border-radius: 10px;
   object-fit: contain;
 }
+
 .about-text span {
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
   color: var(--main-color);
 }
+
 .about-text p {
   font-size: 0.938rem;
   margin: 0.5rem 0 1.4rem;
 }
+
+/* Brands Container Styles */
 .brands-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, auto));
@@ -188,14 +243,18 @@ header {
   gap: 1rem;
   margin-top: 2rem;
 }
+
 .brands-container img {
   width: 100px;
   filter: grayscale(1);
 }
+
 .brands-container img:hover {
   width: 100px;
   filter: grayscale(0);
 }
+
+/* Newsletter Styles */
 .newsletter {
   display: flex;
   flex-direction: column;
@@ -205,14 +264,18 @@ header {
   background-size: cover;
   background-position: center;
 }
+
 .newsletter h2 {
   color: #fff;
 }
+
+/* News Box Styles */
 .news-box {
   display: flex;
   align-items: center;
   margin-top: 2rem;
 }
+
 .news-box input {
   width: 260px;
   height: 44px;
@@ -221,6 +284,7 @@ header {
   background: #fff;
   padding: 10px;
 }
+
 .news-box .btn {
   height: 44px;
   padding: 11px;
@@ -228,57 +292,78 @@ header {
   font-weight: 500;
   text-transform: uppercase;
 }
+
+/* Footer Styles */
 .footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, auto));
   gap: 1rem;
 }
+
+/* Footer Box Styles */
 .footer-box h2 {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 10px;
 }
+
 .footer-box span {
   color: var(--main-color);
 }
+
 .footer-box p {
   font-size: 00.938rem;
   margin-bottom: 10px;
 }
+
+/* Social Styles */
 .social {
   display: flex;
   align-items: center;
 }
+
 .social a {
   font-size: 24px;
   margin-right: 10px;
   color: var(--text-color);
 }
+
 .social a:hover {
   color: var(--main-color);
 }
+
+/* Footer Box H3 Styles */
 .footer-box h3 {
   font-weight: 500;
   margin-bottom: 10px;
 }
+
+/* Footer Box List Item Styles */
 .footer-box li a {
   color: var(--text-color);
 }
+
 .footer-box li a:hover {
   color: var(--main-color);
 }
+
+/* Contact Info Styles */
 .contact-info {
   display: flex;
   flex-direction: column;
 }
+
 .contact-info span {
   color: var(--text-color);
 }
+
+/* Copyright Styles */
 .copyright {
   padding: 20px;
   text-align: center;
 }
-/* Making Responsive */
+
+/* Responsive Styles */
 @media (max-width: 991px) {
   header {
     padding: 18px 4%;
@@ -287,6 +372,7 @@ header {
     padding: 50px 4%;
   }
 }
+
 @media (max-width: 881px) {
   .home-text h1 {
     font-size: 2rem;
@@ -296,6 +382,7 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(218px, auto));
   }
 }
+
 @media (max-width: 768px) {
   header {
     padding: 11px 4%;
@@ -335,6 +422,7 @@ header {
     order: 2;
   }
 }
+
 @media (max-width: 491px) {
   .home-text h1 {
     font-size: 1.7rem;
