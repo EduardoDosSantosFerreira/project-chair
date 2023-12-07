@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" type="image/png" sizes="50x50" href="img/icon/353396-chair-furniture-living-sofa_107472.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aos.css">
+
     <title>Furniture Website</title>
     <!-- LInk To CSS -->
     <link rel="stylesheet" href="style.css">
@@ -29,7 +31,7 @@
     </header>
     <!-- Home -->
     <section class="home" id="home">
-        <div class="home-text">
+        <div class="home-text" data-aos="fade-right">
             <h1><Span>Make</Span>Your Comfort <br> Is Our <span>Happiness</span></h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Dolores veritatis ad blanditiis molestias sunt aspernatur.</p>
             <a href="shop" class="btn">Shop Now</a>
@@ -37,7 +39,7 @@
     </section>
     <!-- Shop -->
     <section class="shop" id="shop">
-        <div class="heading">
+        <div class="heading" data-aos="fade-right">
             <span>New Arrival</span>
             <h2>Shop Now</h2>
         </div>
@@ -155,7 +157,7 @@
     </section>
     <!-- New Arrival -->
     <section class="new" id="new">
-        <div class="heading">
+        <div class="heading" data-aos="fade-right">
             <span>New Collection</span>
             <h2>Best Selling</h2>
         </div>
@@ -218,7 +220,7 @@
         </div>
     </section>
     <!-- About -->
-    <section class="about" id="about">
+    <section class="about" id="about" data-aos="fade-right">
         <div class="about-img">
             <img src="img/about.jpg" alt="">
         </div>
@@ -290,5 +292,12 @@
     </div>
     <!-- Link To JS -->
     <script src="main.js"></script>
+    <script src="aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+      }
+      );
+    </script>
 </body>
 </html>
