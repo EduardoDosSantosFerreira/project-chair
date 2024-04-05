@@ -1,6 +1,6 @@
 # Bem-vindo ao Chair X - O Destino de Elegância em Mobília
 
-![site](https://github.com/EduardoDosSantosFerreira/project-chair/blob/main/siteimg.png)
+![site](https://github.com/EduardoDosSantosFerreira/project-chair/blob/main/img/siteimg.png)
 
 **Quem Somos:**
 Somos apaixonados por design e qualidade, comprometidos em oferecer mobília que transforma casas em lares únicos.
