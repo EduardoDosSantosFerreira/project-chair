@@ -4,7 +4,7 @@ function adicionarLoginAoDOM() {
     div.innerHTML = `
     <!-- Navbar -->
     <header>
-        <a href="#" class="logo">Chair <span>X.</span></a>
+        <a href="#" class="logo">Furniture <span>X.</span></a>
         <div class="bx bx-menu" id="menu-icon"></div>
 
         <ul class="navbar">
@@ -20,8 +20,7 @@ function adicionarLoginAoDOM() {
     <section class="home" id="home">
         <div class="home-text" data-aos="fade-right">
             <h1><Span>Make</Span>Your Comfort <br> Is Our <span>Happiness</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Dolores veritatis ad blanditiis molestias
-                sunt aspernatur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Dolores veritatis ad blanditiis molestias sunt aspernatur.</p>
             <a href="shop" class="btn">Shop Now</a>
         </div>
     </section>
@@ -215,11 +214,8 @@ function adicionarLoginAoDOM() {
         <div class="about-text">
             <span>About Us</span>
             <h2>Furniture is important part <br>for comfort</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, placeat praesentium. Quas quis, omnis
-                repellendus reiciendis eius fuga quidem eum illum veniam explicabo excepturi fugit distinctio sequi
-                quisquam quaerat dignissimos! Beatae delectus numquam perspiciatis.</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi ex aut repellat ipsum possimus delectus
-                cum quaerat rerum?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, placeat praesentium. Quas quis, omnis repellendus reiciendis eius fuga quidem eum illum veniam explicabo excepturi fugit distinctio sequi quisquam quaerat dignissimos! Beatae delectus numquam perspiciatis.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi ex aut repellat ipsum possimus delectus cum quaerat rerum?</p>
             <a href="#shop" class="btn">Learn More.</a>
         </div>
     </section>
@@ -249,8 +245,7 @@ function adicionarLoginAoDOM() {
     <section class="footer" id="footer">
         <div class="footer-box">
             <h2>Chair <span>X.</span></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt amet minus mollitia impedit qui
-                asperiores!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt amet minus mollitia impedit qui asperiores!</p>
             <div class="social">
                 <a href="#"><i class='bx bxl-facebook'></i></a>
                 <a href="#"><i class='bx bxl-twitter'></i></a>
@@ -276,15 +271,14 @@ function adicionarLoginAoDOM() {
             <span>New York City, USA 10004</span>
             <span>+1 100 1004 0001</span>
             <span>eduardocharx@gmail.com</span>
-
         </div>
     </section>
     <div class="copyright">
         <p>&#169; Eduardo S Ferreira All Right Reserved.</p>
     </div>
-      `;
-  
+    `;
+
     document.body.appendChild(div);
-  }
-  
-  adicionarLoginAoDOM();
+}
+
+adicionarLoginAoDOM();
